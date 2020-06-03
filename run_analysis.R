@@ -122,7 +122,7 @@ tidyDataset <- smaller_df %>%
   summarise_all(list(mean = mean))
 
 # Writing a file of the tidyDataser into the UCI HAR Dataset directory
-write.table(tidyDataset, file = "./UCI HAR Dataset/tidyDataset.txt")
+write.table(tidyDataset, file = "./tidyDataset.txt", row.name=FALSE)
 
 str(tidyDataset)
 
